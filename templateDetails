@@ -1,0 +1,487 @@
+<?xml version="1.0"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="2.5" client="site" type="template" method="upgrade">
+  <name>eltigrense</name>
+  <creationDate>14/11/2017</creationDate>
+  <version>1.0</version>
+  <copyright>Copyright (C) JeanCelularesTablas.</copyright>
+ 
+   <description>
+  <![CDATA[
+    <style type="text/css" media="all">
+        <!--
+        h1 {clear:both;font-family: Georgia, sans-serif;font-size:36px;  font-weight: normal;}
+        h2 {clear:both;font-family: Georgia, sans-serif;font-size:20px;  font-weight: normal; }
+        -->
+      </style>
+      <script src="../templates/eltigrense/admin/jscolor/jscolor.js"></script>
+          <div class="dd-description clearfix">
+          <h1><img src=<span style="color: #cc0607;">Version Libre</span></h1>
+            <hr>
+    
+      <div class="pull-left" style="max-width: 35.69%;">
+      <img style="max-width: 100%; box-sizing: border-box; -webkit-box-sizing: border-box; padding: 10px; background: #fff; border: 1px solid #e1e1e1;" src="../templates/eltigrense/images/sc.jpg" />
+    
+    </div>
+    <div class="pull-left" style="max-width: 64.31%; box-sizing: border-box; -webkit-box-sizing: border-box; padding: 0 30px;">
+      <div style="margin-bottom: 20px;">
+        <div style="margin-bottom: 20px;">
+      
+      
+      <div style="margin: 20px 0 0;">
+        <span style="color: #a0a0a0; display: block; margin-top: 2px;"><li>Para uso comercial</li></span>
+      <span style="color: #a0a0a0; display: block; margin-top: 2px;"><li>PRO version</li></span>
+      <a style="text-decoration: none !important; outline: none;" target="_blank"/>
+          </a>
+          </div></div></div></div>
+  </div>
+  ]]>
+  </description>
+  <files>
+    <file>CloudZoom.js</file>
+    <file>Readme.txt</file>
+    <file>blank.png</file>
+    <file>bootstrap.min.js</file>
+    <file>component.php</file>
+    <file>error.php</file>
+    <file>functions-additional.php</file>
+    <file>functions.php</file>
+    <file>index.html</file>
+    <file>index.php</file>
+    <file>jquery.js</file>
+    <file>layout.core.js</file>
+    <file>layout.ie.css</file>
+    <file>layout.ie.js</file>
+    <file>modrender.php</file>
+    <file>script.js</file>
+    <file>style.ie.css</file>
+    <file>templateDetails.xml</file>
+    <file>virtuemart.js</file>
+    <folder>site</folder>
+    <folder>admin</folder>
+    <folder>css</folder>
+    <folder>data</folder>
+    <folder>fields</folder>
+    <folder>html</folder>
+    <folder>images</folder>
+    <folder>includes</folder>
+    <folder>js</folder>
+    <folder>language</folder>
+    <folder>library</folder>
+    <folder>plugins</folder>
+    <folder>prototypes</folder>
+    <folder>templates</folder>
+  </files>
+  <positions>
+    <position>bottom-banner-1</position>
+    <position>breadcrumb</position>
+    <position>dd-footer-1</position>
+    <position>dd-footer-2</position>
+    <position>dd-footer-3</position>
+    <position>dd-footer-4</position>
+    <position>dd-footer-5</position>
+    <position>dd-footer-6</position>
+    <position>dd-footer-7</position>
+    <position>dd-top-1</position>
+    <position>dd-top-2</position>
+    <position>dd-top-3</position>
+    <position>dd-top-4</position>
+    <position>dd-top-5</position>
+    <position>dd-top-6</position>
+    <position>dd-top-7</position>
+    <position>left</position>
+    <position>position-1</position>
+    <position>position-7</position>
+    <position>position-8</position>
+    <position>topbanner-1</position>
+  </positions>
+  <config>
+    <fields name="params" addfieldpath="/templates/eltigrense/fields">
+            <fieldset name="config" label="Configuración">
+          <field type="spacer" class="text" label="...........................................LOGO....................................................." /> 
+          <field name="logoFile" default="templates/eltigrense/images/designer/logo.png" type="media" label="TPL_LOGO_LABEL" description="TPL_LOGO_DESC"/>
+      
+          <field type="spacer" class="text" label="...........................................FAVICON.................................................." />    
+          <field name="fav" type="media" label="Subir favicon" description="" default="templates/eltigrense/images/designer/favicon.ico" />
+
+          
+          <field type="spacer" class="text" label="...........................................Social...................................................." />
+           
+           <field name="social_color" type="text" default="#FFF" label="Color social icon" disabled="false" class="color {pickerPosition:'right',hash:true,caps:false,required:false}" />
+           
+           <field type="spacer" class="text" label="...........................................FACEBOOK.................................................." />
+           <field name="facebook" type="text" default="//www.facebook.com/sharer.php?u=" label="Facebok url: " description="facebok link" filter="string"  disabled="false"/>
+           <field name="facebook_off" type="radio" default="1" class="btn-group" label="" description="">
+               <option value="0">OFF</option>
+               <option value="1">ON</option>
+           </field>
+        
+           <field type="spacer" class="text" label=".........................................TWITTER......................................................" />
+           <field name="twitter" type="text" default="//twitter.com/share?url=&amp;text=" label="Twitter url: " description="Twitter link" filter="string" disabled="false" />
+           <field name="twitter_off" type="radio" default="1" class="btn-group" label="" description="">
+             <option value="0">OFF</option>
+             <option value="1">ON</option>
+           </field>
+      
+          <field type="spacer" class="text" label=".........................................GOOGLE+........................................................" />
+          <field name="google" type="text" default="//plus.google.com/share?url=http://google.com" label="Google+ url:" description="Google+ link" filter="string" />
+          <field name="google_off" type="radio" default="1" class="btn-group" label="" description="">
+               <option value="0">OFF</option>
+               <option value="1">ON</option>
+          </field>
+          <field type="spacer" class="text" label=".........................................PINTEREST..........................................." />
+          <field name="pinterest" type="text" default="//pinterest.com/pin/create/button/?url=&amp;media=&amp;description=" label="pinterest url:" description="pinterest link" filter="string" />
+          <field name="pinterest_off" type="radio" default="1" class="btn-group" label="" description="">
+               <option value="0">OFF</option>
+               <option value="1">ON</option>
+          </field>
+
+          <field type="spacer" class="text" label=".........................................Close.all.icons..............................................." />
+    
+          <field name="social_icon_all" type="radio" default="1" class="btn-group" label="" description="">
+            <option value="0">OFF</option>
+            <option value="1">ON</option>
+          </field>
+       </fieldset>
+
+       <fieldset name="slideshow" label="Diapositivas">
+          <field type="spacer" class="text" label="..........................Presentación de colores........................." />  
+          <field name="slideshow_color1" type="text" default="#fff" label="Título del color 1" disabled="false" class="color {pickerPosition:'right',hash:true,caps:false,required:false}" />
+          <field name="slideshow_color2" type="text" default="#fff" label="Título del color 2" disabled="false" class="color {pickerPosition:'right',hash:true,caps:false,required:false}" />
+          <field name="slideshow_color3" type="text" default="#fff" label="Texto Color " disabled="false" class="color {pickerPosition:'right',hash:true,caps:false,required:false}" />
+          <field name="slideshow_color4" type="text" default="#199eb8" label="Color de fondo del botón " disabled="false" class="color {pickerPosition:'right',hash:true,caps:false,required:false}" />
+          <field type="spacer" class="text" label="......................................Tamaño del texto......................" /> 
+          <field name="size_text1" type="text" label="Caption 1 size text"  default="40"/>
+          <field name="size_text2" type="text" label="Caption 2 size text"  default="28"/>
+
+          
+          <field type="spacer" class="text" label="...............................DIAPOSITIVA.1.............................................................." />  
+          <field name="slide1_image" type="media" label="Subir Photo " description="" default="templates/eltigrense/images/designer/slideshow/1.jpg"/>
+          <field name="slide1_text1" type="text" label="Leyenda 1"  default="El Titulo"/>
+          <field name="slide1_text2" type="text" label="Leyenda 2"  default="ESCRIBA SU TEXTO AQUÍ"/>
+          <field name="slide1_text3" type="text" label="Text"  default="pequeña descripcion"/>
+          <field name="slide1_button_name" type="text" default="Siguiente" size="50" label="button" />
+          <field name="slide1_button_link" type="text" default="http://" size="50" label="http://" /> 
+          <field type="spacer" label="Cerrar la diapositiva 1 " />
+          <field name="slide1_on_off" type="radio" default="1" class="btn-group"  label="" >
+              <option value="1">ON</option>
+              <option value="0">OFF</option>
+          </field>  
+          
+        
+      
+          <field type="spacer" class="text" label="...............................DIAPOSITIVA.2................................................................" />  
+          <field name="slide2_image" type="media" label="Subir Photo " description="" default="templates/eltigrense/images/designer/slideshow/2.jpg"/>
+          <field name="slide2_text1" type="text" label="Subtítulo 1"  default="El Titulo"/>
+          <field name="slide2_text2" type="text" label="Subtítulo 2"  default="ESCRIBA SU TEXTO AQUÍ"/>
+          <field name="slide2_text3" type="text" label="Text"  default="pequeña descripcion"/>
+          <field name="slide2_button_name" type="text" default="Siguiente" size="50" label="button" />
+          <field name="slide2_button_link" type="text" default="http://" size="50" label="http://" /> 
+          <field type="spacer" label="Cerrar diapositiva 2 " />
+          <field name="slide2_on_off" type="radio" default="1" class="btn-group"  label="" >
+              <option value="1">ON</option>
+              <option value="0">OFF</option>
+          </field>  
+        
+          <field type="spacer" class="text" label="...............................DIAPOSITIVA.3................................................................" /> 
+          <field name="slide3_image" type="media" label="Subir Photo" description="" default="templates/eltigrense/images/designer/slideshow/3.jpg"/>
+          <field name="slide3_text1" type="text" label="Subtítulo 1"  default="El Titulo"/>
+          <field name="slide3_text2" type="text" label="Subtítulo 2"  default="ESCRIBA SU TEXTO AQUÍ"/>
+          <field name="slide3_text3" type="text" label="Text"  default="Pequeña descripcion"/>
+          <field name="slide3_button_name" type="text" default="Siguiente" size="50" label="button" />
+          <field name="slide3_button_link" type="text" default="http://" size="50" label="http://" /> 
+          <field type="spacer" label="Cerrar diapositiva 3 " />
+          <field name="slide3_on_off" type="radio" default="1" class="btn-group"  label="" >
+              <option value="1">ON</option>
+              <option value="0">OFF</option>
+          </field>  
+        
+          <field type="spacer" class="text" label="..........................................Presentación rápida............................................." />   
+          <field name="speed" type="text" default="4600" size="50"  label="Speed slideshow 0/ms " disabled="false"/>
+          
+          <field type="spacer" label="Dispalay Slideshow "/>
+          <field name="slideshow_close_section" type="radio" default="1" class="btn-group"  label="" >
+             <option value="0">Sin páginas</option>
+            <option value="1">Página principal</option>
+            <option value="2">Todas las páginas</option>
+          </field>    
+    
+      </fieldset>
+      <fieldset name="stats" label="Stats">
+
+        <field name="stats_text1" type="text" label="Título"  default="ESCRIBA SU TEXTO AQUÍ"/>
+        <field name="stats_text2" type="text" label="Text"  default="Lorem ipsum dolor sit amet, consectetur adipiscing elit"/>
+        <field type="spacer" class="text" label="........................................columna de estadísticas 1................................................" />
+        <field name="stats_c1_title" type="text" label="Título"  default="Clientes satisfechos"/>
+        <field name="stats_c1_number" type="text" label="Number"  default="432"/>
+        <field type="spacer" class="text" label="..........................................columna de estadísticas.2................................................." />
+        <field name="stats_c2_title" type="text" label="Título"  default="Proyectos publicados"/>
+        <field name="stats_c2_number" type="text" label="Number"  default="79"/>
+        <field type="spacer" class="text" label="..........................................columna de estadísticas.3................................................." />
+        <field name="stats_c3_title" type="text" label="Título"  default="Horas de apoyo"/>
+        <field name="stats_c3_number" type="text" label="Number"  default="1,432"/>
+        <field type="spacer" class="text" label="..........................................columna de estadísticas.1................................................." />
+        <field name="stats_c4_title" type="text" label="Título"  default="Buenos trabajadores"/>
+        <field name="stats_c4_number" type="text" label="Number"  default="20"/>
+
+        <field type="spacer" label="Mostrar estadísticas"/>
+          <field name="stats_close_section" type="radio" default="1" class="btn-group"  label="" >
+            <option value="0">Sin páginas</option>
+            <option value="1">Página principal</option>
+            <option value="2">Todas las páginas</option>
+          </field>             
+
+      </fieldset>
+
+      <fieldset name="info" label="Info">
+
+        <field name="info_backround_image" type="media" label="Cargar imagen de fondo " description="" default="templates/eltigrense/images/designer/info_backround.jpg" />
+        <field name="info_text1" type="text" label="Titulo"  default="ESCRIBA SU TEXTO AQUÍ"/>
+        <field name="info_text2" type="text" label="Texto"  default="Lorem ipsum dolor sit amet, consectetur adipiscing elit"/>
+        <field name="info_image" type="media" label="Subir Photo " description="" default="templates/eltigrense/images/designer/computer.png" />
+          <field type="spacer" label="Mostrar informacion"/>
+          
+          <field name="info_close_section" type="radio" default="1" class="btn-group"  label="" >
+             <option value="0">Sin páginas</option>
+       <option value="1">Página principal</option>
+       <option value="2">Todas las páginas</option>
+          </field>   
+
+      </fieldset>
+      <fieldset name="product" label="Producto carousel">
+          <field name="product1_text" type="text" label="Titulo"  default="Latest Products"/>
+          
+          <field type="spacer" class="text" label="..........................................Producto.1................................................." />
+          <field name="product1_image" type="media" label="Cargar imagen del producto" description="" default="templates/eltigrense/images/designer/product/1.png" />
+          <field name="product1_link" type="text" default="http://" size="50" label="http://" />
+
+          <field type="spacer" class="text" label="..........................................Producto.2................................................." />
+          <field name="product2_image" type="media" label="Cargar imagen del producto" description="" default="templates/eltigrense/images/designer/product/2.png" />
+          <field name="product2_link" type="text" default="http://" size="50" label="http://" />
+
+          <field type="spacer" class="text" label="..........................................Producto.3................................................." />
+          <field name="product3_image" type="media" label="Cargar imagen del producto" description="" default="templates/eltigrense/images/designer/product/3.png" />
+          <field name="product3_link" type="text" default="http://" size="50" label="http://" />
+
+          <field type="spacer" class="text" label="..........................................Producto.4................................................." />
+          <field name="product4_image" type="media" label="Cargar imagen del producto" description="" default="templates/eltigrense/images/designer/product/4.png" />
+          <field name="product4_link" type="text" default="http://" size="50" label="http://" />
+
+          <field type="spacer" class="text" label="..........................................Producto.5................................................." />
+          <field name="product5_image" type="media" label="Cargar imagen del producto" description="" default="templates/eltigrense/images/designer/product/5.png" />
+          <field name="product5_link" type="text" default="http://" size="50" label="http://" /> 
+
+          <field type="spacer" class="text" label="..........................................Producto.6................................................." />
+          <field name="product6_image" type="media" label="Cargar imagen del producto" description="" default="templates/eltigrense/images/designer/product/6.png" />
+          <field name="product6_link" type="text" default="http://" size="50" label="http://" /> 
+
+          <field type="spacer" class="text" label="..........................................Producto.7................................................." />
+          <field name="product7_image" type="media" label="Cargar imagen del producto" description="" default="templates/eltigrense/images/designer/product/7.png" />
+          <field name="product7_link" type="text" default="http://" size="50" label="http://" />
+
+          <field type="spacer" class="text" label="..........................................Producto.8................................................." />
+          <field name="product8_image" type="media" label="Cargar imagen del producto" description="" default="templates/eltigrense/images/designer/product/8.png" />
+          <field name="product8_link" type="text" default="http://" size="50" label="http://" />
+
+            <field name="product_close_section" type="radio" default="1" class="btn-group"  label="" >
+             <option value="0">Sin páginas</option>
+       <option value="1">Página principal</option>
+       <option value="2">Todas las páginas</option>
+          </field>              
+
+      </fieldset>
+      <fieldset name="about" label="Acerca de">
+          <field name="about_image" type="media" label="Cargar imagen del producto" description="" default="templates/eltigrense/images/designer/1.gif" />
+          <field name="about_text1" type="text" label="Title"  default="Sobre Nosotros"/>
+          <field name="about_text2" type="text" label="Text"  default="Lorem ipsum dolor sit amet, elit adipiscing del consectetur, tempor sed y vitalidad, por lo que el trabajo y dolor, algunas cosas importantes que hacer eiusmod. A través de los años todos vendré, puedo aliquip esfuerzos de estímulo si el distrito escolar que pueda obtener ventajas de ella nostrud ejercicio."/>
+          <field name="about_button_name" type="text" default="Lee mas" size="50" label="button" />
+          <field name="about_button_link" type="text" default="http://" size="50" label="http://" /> 
+
+
+
+          <field name="about_close_section" type="radio" default="1" class="btn-group"  label="" >
+             <option value="0">Sin páginas</option>
+       <option value="1">Página principal</option>
+       <option value="2">Todas las páginas</option>
+          </field>    
+      </fieldset>
+            
+      <fieldset name="icons" label="icons">
+      
+          
+          <field type="spacer" class="text" label="...............................icon.1..............................................................." /> 
+          <field name="icon1_color" type="text" default="#d9534f" label="Background icon color" disabled="false" class="color {pickerPosition:'right',hash:true,caps:false,required:false}" />
+          <field name="icon1_image" type="media" label="Cargar imagen de icono" description="" default="templates/eltigrense/images/designer/icons/1.png"/>
+          <field name="icon1_title" type="text" label="Titulo"  default="ESCRIBA SU TEXTO AQUÍ"/>   
+          <field name="icon1_text" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."  rows="8" cols="60" label="Text" />
+          <field name="icon1_link" type="text" default="http://" size="50" label="http://" /> 
+
+          <field type="spacer" class="text" label="...............................icon.2..............................................................." /> 
+          <field name="icon2_color" type="text" default="#5cb85c" label="Color del icono de fondo" disabled="false" class="color {pickerPosition:'right',hash:true,caps:false,required:false}" />
+          <field name="icon2_image" type="media" label="Cargar imagen de icono" description="" default="templates/eltigrense/images/designer/icons/2.png"/>
+          <field name="icon2_title" type="text" label="Titulo"  default="ESCRIBA SU TEXTO AQUÍ"/>   
+          <field name="icon2_text" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."  rows="8" cols="60" label="Text" />
+           <field name="icon2_link" type="text" default="http://" size="50" label="http://" />
+
+           <field type="spacer" class="text" label="...............................icon.3..............................................................." /> 
+          <field name="icon3_color" type="text" default="#f0ad4e" label="Color del icono de fondo" disabled="false" class="color {pickerPosition:'right',hash:true,caps:false,required:false}" />
+          <field name="icon3_image" type="media" label="Cargar imagen de icono" description="" default="templates/eltigrense/images/designer/icons/3.png"/>
+          <field name="icon3_title" type="text" label="Titulo"  default="ESCRIBA SU TEXTO AQUÍ"/>   
+          <field name="icon3_text" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."  rows="8" cols="60" label="Text" />
+          <field name="icon3_link" type="text" default="http://" size="50" label="http://" />
+
+          <field type="spacer" class="text" label="...............................icon.4..............................................................." /> 
+          <field name="icon4_color" type="text" default="#5bc0de" label="Color del icono de fondo" disabled="false" class="color {pickerPosition:'right',hash:true,caps:false,required:false}" />
+          <field name="icon4_image" type="media" label="Cargar imagen de icono" description="" default="templates/eltigrense/images/designer/icons/4.png"/>
+          <field name="icon4_title" type="text" label="Titulo"  default="ESCRIBA SU TEXTO AQUÍ"/>   
+          <field name="icon4_text" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."  rows="8" cols="60" label="Text" />
+          <field name="icon4_link" type="text" default="http://" size="50" label="http://" />
+          <field type="spacer" label="Icono de pantalla BOX "/>
+          
+          <field name="icon_close_section" type="radio" default="1" class="btn-group"  label="" >
+             <option value="0">Sin páginas</option>
+       <option value="1">Página principal</option>
+       <option value="2">Todas las páginas</option>
+          </field>   
+
+      </fieldset>  
+
+      <fieldset name="portfolio" label="Portafolio">
+           <field name="portfolio_header_title" type="text" label="Título del encabezado"  default="Portafolio"/>
+           <field type="spacer" class="text" label="...............................image1.............................................................." />
+           <field name="portfolio1_image" type="media" label="Cargar imagen de icono" description="" default="templates/eltigrense/images/designer/portfolio/1.jpg"/>
+           <field name="portfolio1_title" type="text" label="Titulo"  default="ESCRIBA SU TEXTO AQUÍ"/>
+           <field name="portfolio1_text" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."  rows="8" cols="60" label="Text" />
+           <field name="portfolio1_link" type="text" default="http://" size="50" label="http://" />
+
+           <field type="spacer" class="text" label="...............................imagen2.............................................................." />
+           <field name="portfolio2_image" type="media" label="Cargar imagen de icono" description="" default="templates/eltigrense/images/designer/portfolio/2.jpg"/>
+           <field name="portfolio2_title" type="text" label="Titulo"  default="ESCRIBA SU TEXTO AQUÍ"/>
+           <field name="portfolio2_text" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."  rows="8" cols="60" label="Text" />
+           <field name="portfolio2_link" type="text" default="http://" size="50" label="http://" />
+
+           <field type="spacer" class="text" label="...............................imagen3.............................................................." />
+           <field name="portfolio3_image" type="media" label="Cargar imagen de icono" description="" default="templates/eltigrense/images/designer/portfolio/3.jpg"/>
+           <field name="portfolio3_title" type="text" label="Titulo"  default="ESCRIBA SU TEXTO AQUÍ"/>
+           <field name="portfolio3_text" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."  rows="8" cols="60" label="Text" />
+           <field name="portfolio3_link" type="text" default="http://" size="50" label="http://" />
+
+           <field type="spacer" class="text" label="...............................imagen4.............................................................." />
+           <field name="portfolio4_image" type="media" label="Cargar imagen de icono" description="" default="templates/eltigrense/images/designer/portfolio/4.jpg"/>
+           <field name="portfolio4_title" type="text" label="Titulo"  default="ESCRIBA SU TEXTO AQUÍ"/>
+           <field name="portfolio4_text" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."  rows="8" cols="60" label="Text" />
+           <field name="portfolio4_link" type="text" default="http://" size="50" label="http://" />
+
+           <field type="spacer" class="text" label="...............................imagen5.............................................................." />
+           <field name="portfolio5_image" type="media" label="Cargar imagen de icono" description="" default="templates/eltigrense/images/designer/portfolio/5.jpg"/>
+           <field name="portfolio5_title" type="text" label="Titulo"  default="ESCRIBA SU TEXTO AQUÍ"/>
+           <field name="portfolio5_text" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."  rows="8" cols="60" label="Text" />
+           <field name="portfolio5_link" type="text" default="http://" size="50" label="http://" />
+
+           <field type="spacer" class="text" label="...............................imagen6.............................................................." />
+           <field name="portfolio6_image" type="media" label="Cargar imagen de icono" description="" default="templates/eltigrense/images/designer/portfolio/6.jpg"/>
+           <field name="portfolio6_title" type="text" label="Titulo"  default="ESCRIBA SU TEXTO AQUÍ"/>
+           <field name="portfolio6_text" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."  rows="8" cols="60" label="Text" />
+           <field name="portfolio6_link" type="text" default="http://" size="50" label="http://" />
+
+           <field type="spacer" class="text" label="...............................imagen7.............................................................." />
+           <field name="portfolio7_image" type="media" label="Cargar imagen de icono" description="" default="templates/eltigrense/images/designer/portfolio/7.jpg"/>
+           <field name="portfolio7_title" type="text" label="Titulo"  default="ESCRIBA SU TEXTO AQUÍ"/>
+           <field name="portfolio7_text" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."  rows="8" cols="60" label="Text" />
+           <field name="portfolio7_link" type="text" default="http://" size="50" label="http://" />
+
+           <field type="spacer" class="text" label="...............................imagen8.............................................................." />
+           <field name="portfolio8_image" type="media" label="Cargar imagen de icono" description="" default="templates/eltigrense/images/designer/portfolio/8.jpg"/>
+           <field name="portfolio8_title" type="text" label="Titulo"  default="ESCRIBA SU TEXTO AQUÍ"/>
+           <field name="portfolio8_text" type="textarea" default="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."  rows="8" cols="60" label="Text" />
+           <field name="portfolio8_link" type="text" default="http://" size="50" label="http://" />                     
+           <field type="spacer" label="Dispalay Portfolio"/>
+           <field name="portfolio_close_section" type="radio" default="1" class="btn-group"  label="" >
+             <option value="0">Sin páginas</option>
+       <option value="1">Página principal</option>
+       <option value="2">Todas las páginas</option>
+          </field>   
+
+      </fieldset>
+      <fieldset name="partners" label="Fogonadura">
+           <field type="spacer" class="text" label="...............................Encabezado.................................................. ......" />
+           <field name="partner_text" type="text" label="Titulo"  default="NUESTROS CLIENTES"/>
+           <field type="spacer" class="text" label="...............................banner1.............................................................." />
+           <field name="partner1_image" type="media" label="Cargar imagen de icono" description="" default="templates/eltigrense/images/designer/partner/1.png"/>
+           <field name="partner1_link" type="text" default="http://" size="50" label="http://" />   
+           <field type="spacer" class="text" label="...............................banner2.............................................................." />
+           <field name="partner2_image" type="media" label="Cargar imagen de icono" description="" default="templates/dd_blikomobile_107/images/designer/partner/2.png"/>
+           <field name="partner2_link" type="text" default="http://" size="50" label="http://" />  
+           <field type="spacer" class="text" label="...............................banner3.............................................................." />
+           <field name="partner3_image" type="media" label="Cargar imagen de icono" description="" default="templates/eltigrense/images/designer/partner/3.png"/>
+           <field name="partner3_link" type="text" default="http://" size="50" label="http://" />  
+           <field type="spacer" class="text" label="...............................banner4.............................................................." />
+           <field name="partner4_image" type="media" label="Cargar imagen de icono" description="" default="templates/eltigrense/images/designer/partner/4.png"/>
+           <field name="partner4_link" type="text" default="http://" size="50" label="http://" />  
+           <field type="spacer" class="text" label="...............................banner5.............................................................." />
+           <field name="partner5_image" type="media" label="Cargar imagen de icono" description="" default="templates/eltigrense/images/designer/partner/5.png"/>
+           <field name="partner5_link" type="text" default="http://" size="50" label="http://" />  
+           <field type="spacer" class="text" label="...............................banner6.............................................................." />
+           <field name="partner6_image" type="media" label="Cargar imagen de icono" description="" default="templates/eltigrense/images/designer/partner/6.png"/>
+           <field name="partner6_link" type="text" default="http://" size="50" label="http://" />  
+           <field type="spacer" label="Dispalay partner"/>
+           <field name="partner_close_section" type="radio" default="1" class="btn-group"  label="" >
+             <option value="0">Sin páginas</option>
+       <option value="1">Página principal</option>
+       <option value="2">Todas las páginas</option>
+          </field> 
+
+      </fieldset>
+      <fieldset name="footercontact" label="Contacto de pie de página">
+           <field type="spacer" class="text" label="...............................Telefono..............................................................." />
+           <field name="contact_phone_title" type="text" label="Titulo"  default="Telefono :"/>
+           <field name="contact_phone_number" type="text" label="number"  default="12-345-678"/>
+           <field type="spacer" class="text" label="...............................Adress.............................................................." />
+           <field name="contact_phone_adress" type="text" label="Dirección "  default="4292 Elk City Road"/>
+           <field name="contact_phone_adress1" type="text" label="Dirección 1 "  default="Alexandria, LA 71301"/>
+           <field type="spacer" class="text" label="...............................Email..............................................................." />
+           <field name="contact_phone_email" type="text" label="Title"  default="E-mail"/>
+           <field name="contact_phone_email1" type="text" label="email adress"  default="info@company.com"/>
+           <field type="spacer" label="Mostrar contacto de pie de página"/>
+           
+           <field name="contact_close_section" type="radio" default="1" class="btn-group"  label="" >
+             <option value="0">Sin páginas</option>
+       <option value="1">Página principal</option>
+       <option value="2">Todas las páginas</option>
+          </field> 
+
+      </fieldset> 
+      <fieldset name="googlemap" label="Google MAP">
+          <field type="spacer" class="text" label="...........................................Google Maps.................................................." /> 
+          <field name="map1" type="text" default="Venezuela" label="País" description="Ciudad" filter="string" />
+          <field name="map2" type="text" default="Puerto la Cruz" label="Calle" description="Calle" filter="string" /> 
+           <field type="spacer" label="Mostrar Mapa de Google"/>
+           <field name="map_close_section" type="radio" default="1" class="btn-group"  label="" >
+             <option value="0">Sin páginas</option>
+       <option value="1">Página principal</option>
+       <option value="2">Todas las páginas</option>
+          </field>
+      </fieldset>
+      <fieldset name="footer" label="Pie de página">
+        <field name="footer1" type="text" default="BlikoMobile" size="50" label="Nombre del sitio" description="footer site name"/>
+        <field type="spacer" label="Mostrar pie de página"/>
+           <field name="footer_close_section" type="radio" default="1" class="btn-group"  label="" >
+             <option value="0">Sin páginas</option>
+       <option value="1">Página principal</option>
+       <option value="2">Todas las páginas</option>
+          </field>
+      </fieldset>
+      <fieldset name="design" label="Diseñado por">
+        <field type="spacer" class="text" label="......................Deshabilitar diseño BY................................................................" />         
+        <field name="design_close_section" type="radio" default="1" class="btn-group"  label="" >
+          <option value="1">ON</option>
+          <option value="0">OFF</option>
+         </field>
+     </fieldset>
+
+    </fields>
+  </config>
+  <languages folder="language">
+    <language tag="en-GB">en-GB/en-GB.tpl_dd_blikomobile_107.ini</language>
+  </languages>
+</extension>
